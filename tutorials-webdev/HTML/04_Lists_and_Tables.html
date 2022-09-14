@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists And Tables</title>
+</head>
+
+<body>
+    <h3>Unordered Lists</h3>
+    <!-- Unordered List start with <ul> tag -->
+    <!-- type is attribute of List -->
+    <ul type="square">
+        <li>This is first item in Unordered list.</li>
+        <li>This is second item in Unordered list.</li>
+        <li>This is third item in Unordered list.</li>
+    </ul>
+
+    <h3>Ordered Lists</h3>
+    <!-- Ordered List start with <ol> tag -->
+    <ol type="1">
+        <li>This is first item in Ordered list.</li>
+        <li>This is second item in Ordered list.</li>
+        <li>This is third item in Ordered list.</li>
+    </ol>
+
+    <h3>Unordered Nested Lists</h3>
+    <!-- Nested List -->
+    <ul type="square">
+        <li>This is first item in Unordered list.</li>
+        <li>This is second item in Unordered list.</li>
+        <ul>
+            <li>This is sublist 1.</li>
+            <li>This is sublist 2.</li>
+        </ul>
+    </ul>
+
+    <!-- Tables -->
+    <!-- The <table> tag defines an HTML table.Each table row is defined with a <tr> tag. 
+
+    Each table header is defined with a <th> tag. Each table data/cell is defined with a <td> tag.
+
+    By default, the text in <th> elements are bold and centered. 
+    By default, the text in <td> elements are regular and left-aligned. -->
+    <h3>Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee Role</th>
+                <th>Employee Salary(P/A)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vishal</td>
+                <td>Software Engineer</td>
+                <td>$100k</td>
+            </tr>
+            <tr>
+                <td>Kunal</td>
+                <td>Software Engineer</td>
+                <td>$80k</td>
+            </tr>
+            <tr>
+                <td>Harsh</td>
+                <td>Android Developer</td>
+                <td>$90k</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
