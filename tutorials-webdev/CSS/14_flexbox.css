@@ -1,0 +1,53 @@
+.container{
+width: 100%;
+height: 500px;
+border: 2px solid black;
+/* Initialize the container as a flex box */
+display: flex;
+
+/* flex properties for flex Container */
+
+flex-direction: row; /* Default value */
+/* flex-direction: column;
+flex-direction: row-reverse;
+flex-direction: column-reverse; */
+
+flex-wrap: wrap; /* default value is nowrap */
+
+/* flex-flow is shorthand for flex: direction and flex: wrap*/
+flex-flow: row wrap;
+
+justify-content: center; /* Placed at center */
+justify-content: space-between; /*Equal spacing between boxes */
+
+/* align-items: center; ( default value is flex-start ) */
+}
+
+.item{
+width: 200px;
+height: 200px;
+background-color: grey;
+border: 2px solid greenyellow;
+margin: 10px;
+padding: 6px;
+}
+
+#item1{
+/* Flex properties for flex Container */
+/* Higher the order, later it show up in the container */
+/* order: 2; */
+
+flex-grow: 2; /* grow rate if size of browser is increasing */
+
+flex-shrink: 3; /* Opposite of flex-grow */
+
+flex-basis: 260px;
+/* when flex-direction: is set to row then flex-basis: will control width */
+/* when flex-direction: is set to column then flex-basis: will control height */
+
+/* shorthand: grow shrink basis */
+flex: 2 3 260px;
+
+align-self: center;
+
+}

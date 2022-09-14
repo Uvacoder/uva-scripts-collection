@@ -1,0 +1,39 @@
+#firstPara{
+background-color: blueviolet;
+height: 40px;
+width: 400px;
+
+border: 2px greenyellow solid; /* This line does the same work ,what below three line does */
+
+/* border-width: 25px 10px 4px 35px; (25px top, 10px right, 4px bottom and 35px left) */
+
+/* border-width: 1px; (Four side)
+border-color: greenyellow;
+border-style: solid; */
+
+border-radius: 5px;/*Make border curvy*/
+}
+
+#secondPara{
+background-color: rgb(22, 133, 238);
+height: 40px;
+width: 400px;
+
+/* Set individuals border */
+border-top: 2px rgb(158, 46, 158) solid;
+border-bottom: 2px rgb(182, 117, 19) solid;
+border-right: 2px rgb(53, 146, 45) solid;
+border-left: 2px rgb(226, 3, 33) solid;
+border-top-right-radius: 8px;
+border-bottom-left-radius: 8px;
+}
+
+#thirdPara{
+height: 100px;
+width: 400px;
+/* By default, the image is repeated so it covers the entire element. */
+background-image: url('https://source.unsplash.com/user/erondu/300x90');
+background-repeat: no-repeat; /*repeat-x and repeat-y will make it repeat in x and y axis respectively.*/
+background-position: top left;
+background-attachment: scroll;/*you can use fixed if you want */
+}

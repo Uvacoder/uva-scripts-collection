@@ -1,0 +1,30 @@
+p{
+/* The font-family property should hold several font names as a "fallback" system. If the browser does not support the
+first font, it tries the next font, and so on. */
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+/* The font-style property is mostly used to specify italic text. */
+font-style: oblique;
+
+/* The font-weight property specifies the weight of a font: */
+font-weight: bolder;
+
+/* In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text */
+font-variant: small-caps;
+
+/* The font-size property sets the size of the text. */
+font-size: 45em;
+
+
+/* If you do not want to use any of the standard fonts in HTML, you can use the Google Fonts API to add hundreds of
+other fonts to your page.
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+font-family: 'Fjalla One', sans-serif;
+Just add a stylesheet link and refer to a font family of your choice: */
+
+
+/* To shorten the code, it is also possible to specify all the individual font properties in one property. */
+font: italic small-caps bold 12px/30px Georgia, serif;
+}

@@ -1,0 +1,45 @@
+.container{
+background-color: burlywood;
+border: 3px solid orangered;
+padding: 34px;
+margin: 34px auto;
+width: 600px;
+}
+
+a{
+text-decoration: none;
+background-color: black;
+color: black;
+}
+
+/* mouse over link */
+a:hover{
+color: blue;
+background-color: rgb(240, 112, 8);
+}
+
+/* mouse over link */
+a:visited{
+background-color: brown;
+}
+
+/* selected link */
+a:active{
+background-color: yellowgreen;
+}
+
+.btn{
+font-style: italic;
+background-color: rgb(69, 92, 197);
+padding: 6px;
+border: none;
+cursor: pointer;
+font-size: 15px;
+border-radius: 6px;
+}
+
+.btn:hover{
+color: teal;
+background-color: tomato;
+border: 2px solid black;
+}

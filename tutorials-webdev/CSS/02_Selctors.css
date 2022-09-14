@@ -1,0 +1,31 @@
+
+    /* Element Selector */
+    /* The element selector selects HTML elements based on the element name. */
+    p {
+        border: 2px solid red;
+    }
+
+    /* Id Selector */
+    /* The id selector uses the id attribute of an HTML element to select a specific element. */
+    #firstPara {
+        color: blueviolet;
+    }
+
+    /* Class Selector */
+    /* The class selector selects HTML elements with a specific class attribute. */
+    .bgBlue {
+        color: yellow;
+        background-color: blue;
+    }
+
+    /* The universal selector (*) selects all HTML elements on the page. */
+    * {
+        color: red;
+    }
+
+    /* Grouping Selector */
+    footer,
+    span {
+        color: rgba(80, 161, 223, 0.837);
+        background-color: blueviolet;
+    }

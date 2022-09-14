@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Type</title>
+    <!-- This is external CSS.  -->
+    <link rel="stylesheet" href="00_Basic.css">
+    <!-- This is Internal CSS. -->
+    <style>
+        p{
+            /* after writing !important attribute you cant overrite it.  */
+            color: blue !important;
+            background-color: rgb(191, 162, 218);
+        }
+        </style>
+</head>
+<body>
+    <!-- Precedence :
+    Inline CSS have more than internal and external css.
+    Internal and external CSS precedence depend which is written last. -->
+    <h3>Inline Internal and External CSS</h3>
+    <!-- This is Inline CSS. -->
+    <p style="color: aquamarine;background-color: black">In this tutorial you will be learn about Inline, Internal and External CSS.</p>
+    <p>In this tutorial you will be learn about Inline, Internal and External CSS.</p>
+</body>
+</html>

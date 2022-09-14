@@ -1,0 +1,22 @@
+html{
+font-size: 25px;
+}
+
+.container{
+font-size: 10px;
+height: 100vh; /* Full viewport height */
+width: 100vw; /* Full viewport width */
+border: 2px solid red;
+}
+
+#first{
+/* 3 times font size of its parent. i.e,30px */
+font-size: 3em;
+padding: 3px;
+}
+
+#second{
+/* 3 times font size of root. i.e,75px */
+font-size: 3rem;
+padding: 3rem;
+}

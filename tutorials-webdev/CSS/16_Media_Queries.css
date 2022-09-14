@@ -1,0 +1,22 @@
+.box{
+font-size: 70px;
+text-align: center;
+background-color: black;
+color: white;
+display: none;
+}
+
+@media(max-width: 600px){
+#box1{
+display: block;
+background-color: cadetblue;
+}
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+#box2{
+display: block;
+background-color: blanchedalmond;
+color: black;
+}
+}

@@ -1,0 +1,22 @@
+.container {
+display: grid;
+grid-template-rows: repeat(5, 1fr);
+grid-template-columns: repeat(4,1fr);
+grid-gap: 1rem;
+}
+
+.box{
+background-color:rebeccapurple;
+border: 2px solid red;
+padding: 23px;
+}
+
+.box:first-child{
+/* grid-column-start: 1;
+grid-column-end: 5;
+grid-row-start: 1;
+grid-row-end: 3; */
+
+/* ShortHand */
+grid-column: 1 / span 3;
+}

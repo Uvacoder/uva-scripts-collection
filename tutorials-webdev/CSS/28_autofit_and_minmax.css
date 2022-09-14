@@ -1,0 +1,12 @@
+.container{
+display: grid;
+grid-gap: 1rem;
+/* grid-template-columns: repeat(3, 112px); */
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.box{
+border: 2px solid black;
+background-color: burlywood;
+padding: 24px;
+}

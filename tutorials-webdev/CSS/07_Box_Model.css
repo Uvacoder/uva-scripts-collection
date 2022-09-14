@@ -1,0 +1,40 @@
+body{
+background-color: #27d0c0ab;
+}
+
+.container{
+background-color: rgb(169 228 161 / 61%);
+border: 3px solid rgb(41, 112, 218);
+
+/* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
+
+/* padding-left: 24px;
+padding-top: 45px;
+padding-right: 0px;
+padding-bottom: 25px; */
+
+/* Padding/margin = top right bottom left */
+/* padding: 24px 1px 28px 45px; */
+
+/* padding/margin = y(top/bottom) x(left/right)*/
+padding: 34px 19px;
+
+/* The CSS margin properties are used to create space around elements, outside of any defined borders. */
+margin: 34px 19px;
+
+border-radius: 20px;
+
+/* The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model). */
+width: 600px;
+box-sizing: border-box;
+}
+
+/* Margin Collapse. */
+/* In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. Then, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px. */
+h1{
+    margin: 0 0 50px 0;
+}
+  
+h2{
+    margin: 20px 0 0 0;
+}

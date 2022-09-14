@@ -1,0 +1,17 @@
+/* all p in div */
+div p{
+color: aqua;
+background-color: bisque;
+}
+
+/* div is direct parent */
+div > p{
+color: blueviolet;
+background-color: bisque;
+}
+
+/* p is right after div i.e, p is next sibling of div */
+div + p{
+color: brown;
+background-color: cornflowerblue;
+}

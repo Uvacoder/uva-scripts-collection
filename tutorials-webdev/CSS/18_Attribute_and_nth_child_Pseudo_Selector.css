@@ -1,0 +1,33 @@
+.container{
+display: block;
+width: 233px;
+margin: auto;
+}
+
+input{
+display: block;
+}
+
+input[type='text']{
+border: 2px solid black;
+padding: 6px;
+}
+
+a[target]{
+font-size: 38px;
+}
+
+/* this will apply css for _self target attribute of anchor tag */
+a[target='_self']{
+font-size: 38px;
+color: red;
+}
+
+/* this will apply css for even number list element */
+li:nth-child(even){
+background-color:crimson ;
+}
+
+li:nth-child(2n+3){
+background-color: darkgreen;
+}

@@ -1,0 +1,11 @@
+p{
+color: red; /* Color by name */
+}
+
+span{
+color: rgb(15, 226, 233); /* Color by rgb Value */
+}
+
+h1{
+color: #ffa4f5; /* Color by Hex Value */
+}

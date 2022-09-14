@@ -1,0 +1,52 @@
+.container{
+background-color: rgb(158, 202, 91);
+}
+
+.box{
+/* KeyFrames and Animations */
+
+
+background-color: blueviolet;
+width: 250px;
+height: 250px;
+position: relative;
+animation-name: Ani2;
+animation-duration: 6s;
+animation-iteration-count: 1;
+
+/* animation-fill-mode: forwards;
+animation-timing-function: ease-out;
+animation-delay: 2s;
+animation-direction: reverse; */
+
+/* Shorthand */
+/* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count
+animation-fill-mode; */
+}
+
+@keyframes Ani2{
+0%{
+top: 0px;
+left: 0px;
+}
+25%{
+top: 250px;
+left: 0px;
+}
+75%{
+top: 250px;
+left: 250px;
+}
+100%{
+top: 0px;
+left: 250px;
+}
+}
+@keyframes Ani1{
+from{
+width: 200px;
+}
+to{
+width: 1400px;
+}
+}

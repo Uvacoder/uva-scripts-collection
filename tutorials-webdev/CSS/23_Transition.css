@@ -1,0 +1,25 @@
+#box{
+display: flex;
+height: 200px;
+width: 200px;
+background-color: green;
+justify-content: center;
+align-items: center;
+
+/* transition-property: background-color;
+transition-duration: 6s;
+transition-timing-function: ease-out;
+transition-delay: 1s; */
+
+/* Shorthand */
+/* transition: background-color duration timing-function delay; */
+transition: all 3s ease-in 1s;
+}
+
+#box:hover{
+background-color: rgb(84, 184, 84);
+height: 300px;
+width: 300px;
+border-radius: 50px;
+font-size: 40px;
+}

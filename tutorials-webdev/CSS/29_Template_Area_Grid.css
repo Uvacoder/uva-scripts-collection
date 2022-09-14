@@ -1,0 +1,29 @@
+.container {
+display: grid;
+gap: 2rem;
+grid-template-areas:
+'navbar navbar navbar navbar'
+'section section section aside'
+'footer footer footer footer';
+}
+
+.item {
+background-color: burlywood;
+border: 2px solid red;
+}
+
+#navbar {
+grid-area: navbar;
+}
+
+#section {
+grid-area: section;
+}
+
+#aside {
+grid-area: aside;
+}
+
+#footer{
+grid-area: footer;
+}

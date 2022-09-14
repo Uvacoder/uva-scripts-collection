@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <title>Before and After pseudo selector</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        header::after{
+            background: url('https://source.unsplash.com/WLUHO9A_xik/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 24px;
+        }
+
+        section {
+            height: 340px;
+            margin: 6px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-family: 'Playball', cursive;
+
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::before{
+            content: "this is content";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur tempore officia tenetur non,
+            accusantium dolorum eos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur officia quod veritatis ab maxime quis nemo cupiditate soluta deserunt similique ea natus quam dolorem obcaecati ipsa ipsum assumenda, unde harum voluptatum? Modi, earum. Voluptatem nisi ullam laudantium maxime ea ratione eum quas culpa repellendus sunt!</p>
+    </section>
+</body>
+</html>
