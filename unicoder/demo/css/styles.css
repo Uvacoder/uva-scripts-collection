@@ -1,0 +1,107 @@
+/*
+ * Unicode.js
+ *
+ * MIT licensed
+ * Copyright (C) 2015 Tim Holman, http://tholman.com
+ */
+* {
+  box-sizing: border-box; }
+
+html, body {
+  min-width: 910px;
+  padding: 0px;
+  height: 100%;
+  margin: 0px; }
+
+body {
+  background: #222;
+  min-height: 100%;
+  padding: 20px; }
+
+.inner {
+  background: #fff;
+  min-height: 100%;
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.inner-ear {
+  max-width: 830px;
+  margin: auto; }
+
+.description-and-stuff {
+  font-family: monospace, sans-serif;
+  line-height: 25px;
+  font-size: 18px; }
+  .description-and-stuff a {
+    color: #777;
+    text-decoration: none; }
+    .description-and-stuff a:hover {
+      text-decoration: underline; }
+  .description-and-stuff .links {
+    margin-top: 20px;
+    margin-bottom: 25px; }
+
+h1 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 81px;
+  color: #222;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  height: 80px;
+  line-height: 100px; }
+
+.text {
+  font-family: monospace;
+  font-size: 18px;
+  padding: 12px;
+  width: 100%; }
+
+.text-area {
+  margin-bottom: 25px;
+  margin-top: 20px; }
+
+ul {
+  list-style: none;
+  padding-left: 200px; }
+  ul li {
+    margin-bottom: 20px;
+    font-size: 18px; }
+    ul li div:nth-child(1) {
+      margin-left: -200px;
+      width: 200px;
+      float: left;
+      font-family: monospace;
+      text-transform: capitalize;
+      font-size: 18px;
+      vertical-align: top;
+      line-height: 28px; }
+
+/**
+ * 3rd party stuff
+ */
+.links {
+  font-family: monospace;
+  color: #222;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  width: 130px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.7);
+  line-height: 22px; }
+  .links span, .links a {
+    display: block;
+    color: inherit; }
+
+.github-link {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0; }
+
+iframe {
+  margin-top: 5px; }
