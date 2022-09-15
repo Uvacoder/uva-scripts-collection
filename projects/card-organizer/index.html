@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Card Organizer Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <section role="main" class="container-fluid">
+            <h1 class="text-center">Card Organizer Demo</h1>
+        
+            <div id="cardContainer"></div>
+
+            <form>
+                <input id="formOutput" type="hidden">
+            </form>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <script src="card-organizer.js"></script>
+        <script>
+            const data = [
+                {
+                    "title": "Effluent pH",
+                    "description": "Taken from the lab sink daily.",
+                    "key": 850
+                },
+                {
+                    "title": "Effluent D.O.",
+                    "description": "Dissolved Oxygen reading from lab sink daily.",
+                    "key": 372
+                },
+                {
+                    "title": "Effluent Flow",
+                    "description": "Meter reading.",
+                    "key": 620
+                }
+            ];
+
+            const cardContainerEl = document.getElementById("cardContainer");
+
+            const outputEl = document.getElementById("formOutput");
+
+            const config = {
+                unique: false,
+                mutation: true,
+                hiddenData: [
+                    {
+                        "title": "Effluent Free Cl2",
+                        "description": "Free chlorine reading taken from lab sink daily.",
+                        "key": 857
+                    }
+                ]
+            };
+
+            const organizer = new CardOrganizer(
+                data, 
+                cardContainerEl, 
+                outputEl,
+                config
+            );
+        </script>
+    </body>
+</html>
