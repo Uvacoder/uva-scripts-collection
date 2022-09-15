@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <button id="button">Click Me</button>
+    </div>
+
+    <script>
+      // wrapper is a div, a block level element
+      // button is inline-block, and inside of wrapper
+      // event bubbles up, so the click event associated with button fires first, and then with wrapper
+      document.getElementById("wrapper").addEventListener("click", () => {
+        console.log("wrapper");
+      });
+      document.getElementById("button").addEventListener("click", () => {
+        console.log("button");
+      });
+    </script>
+  </body>
+</html>
