@@ -1,0 +1,10 @@
+* React is a open-source frontend javascript library which is used to build user interface specially for single page application
+* React is introduced by facebook (Jordan Walker)
+
+
+what are the features of react ?
+    * It uses JSX which is xml like extension to the javascript
+    * It uses Virtual DOM instead of real-DOM considering that real-DOM manipulation is expensive
+    * it supports server-side rendering
+    * Follows unidirectional dat flow or data binding i.e we can pass props from parent component to child component but not
+        from child to parent

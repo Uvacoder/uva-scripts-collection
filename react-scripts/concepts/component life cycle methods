@@ -1,0 +1,58 @@
+*Every React Component has a lifecycle of its own, lifecycle of a component can be defined as the series of methods
+that are invoked in different stages of the component’s existence.
+
+What are the lifecycle methods ?
+ * componentDidMount()
+ * componentWillMount()
+ * componentWillRecieveProps()
+ * componentDidUpdate()
+ * getDerivedStateFromProps()
+ * componentWillUnmount()
+
+
+What are the phases of component lifecycle methods ?
+    * Initialization
+    * Mounting
+    * Updating
+    * Unmounting
+
+
+Initialization -->
+This is the phase in which the component is going to start its journey by setting up the state (see below) and the props.
+This is usually done inside the constructor method.
+
+Mounting -->
+The name is self-explanatory. Mounting is the phase in which our React component mounts on the DOM
+(i.e., is created and inserted into the DOM).
+This phase comes onto the scene after the initialization phase is completed. In this phase, our component renders the first time.
+The methods that are available in this phase are:
+    * componentWillMount()
+    * componentDidMount()
+
+Updating -->
+This is the third phase through which our component passes. After the mounting phase where the component has been created,
+the update phase comes into the scene. This is where component’s state changes and hence, re-rendering takes place.
+In this phase, the data of the component (state & props) updates in response to user events like clicking, typing and so on.
+This results in the re-rendering of the component. The methods that are available in this phase are:
+    * shouldComponentUpdate()
+    * componentWillUpdate()
+    * ComponentDidUpdate()
+
+Unmounting -->
+This is the last phase in the component’s lifecycle. As the name clearly suggests, the component gets unmounted from the DOM in this phase. The method that is available in this phase is:
+    * componentWillUnmount()
+
+what is componentDidMount()?
+    componentDidMount() is a lifecycle method. This function get invoked just after the render function is executed
+
+what is componentWillMount()
+    componentWillUnmount() is a lifecycle method. this function gets called before the component is mounted on the DOM
+
+what is componentWillRecieveProps()?
+    componentWillRecieveProps() is a lifecycle method and is completely independent of state. Whenever we want to update the
+    state in the child component using new props value. we use componentWillRecieveProps() method.
+
+what is getDerivedStateFromProps()?
+    getDerivedStateFromProps() is invoked right before calling the render method and when it receives new props.
+    we cannot access "this" keyword inside the method so we have to store the props in the state to compare the nextprops and prevState props
+

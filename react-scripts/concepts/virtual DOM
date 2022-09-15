@@ -1,0 +1,11 @@
+Virtual DOM is an in-memory representation of real-DOM
+
+The Virtual DOM works in three steps
+1. Whenever any underlying datachanges, the entire UI is rendered in Virtual-DOM representation
+2. then the difference between the previous DOM representation and the new one is calculated
+3. Once the calcualtions are done. the real DOM will be updated with only the thing that have actually changed
+
+
+
+source :
+https://programmingwithmosh.com/react/react-virtual-dom-explained/
