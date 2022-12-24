@@ -1,5 +1,6 @@
 - https://github.com/Uvacoder/uva-css-scripts-collection
 - https://github.com/Uvacoder/aaa-css-reference-collect
+- https://github.com/Uvacoder/aaa-html-css-snips-collection
 
 
 ## AsciiMorph
