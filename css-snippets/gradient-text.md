@@ -1,51 +1,26 @@
-### Gradient text
+---
+title: Gradient text
+tags: visual
+cover: blog_images/red-berries.jpg
+firstSeen: 2018-02-25T15:14:39+02:00
+lastUpdated: 2020-12-30T15:37:37+02:00
+---
 
 Gives text a gradient color.
 
-#### HTML
+- Use `background` with a `linear-gradient()` value to give the text element a gradient background.
+- Use `webkit-text-fill-color: transparent` to fill the text with a transparent color.
+- Use `webkit-background-clip: text` to clip the background with the text, filling the text with the gradient background as the color.
 
 ```html
 <p class="gradient-text">Gradient text</p>
 ```
 
-#### CSS
-
 ```css
 .gradient-text {
-  background: -webkit-linear-gradient(pink, red);
+  background: linear-gradient(#70D6FF, #00072D);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  font-size: 32px;
 }
 ```
-
-#### Demo
-
-<div class="snippet-demo">
-  <p class="snippet-demo__gradient-text">
-    Gradient text
-  </p>
-</div>
-
-<style>
-.snippet-demo__gradient-text {
-  background: -webkit-linear-gradient(pink, red);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
-}
-</style>
-
-#### Explanation
-
-1. `background: -webkit-linear-gradient(...)` gives the text element a gradient background.
-2. `webkit-text-fill-color: transparent` fills the text with a transparent color.
-3. `webkit-background-clip: text` clips the background with the text, filling the text with
-   the gradient background as the color.
-
-#### Browser support
-
-<span class="snippet__support-note">⚠️ Uses non-standard properties.</span>
-
-* https://caniuse.com/#feat=text-stroke
